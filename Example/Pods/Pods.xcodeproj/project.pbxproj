@@ -29,6 +29,8 @@
 		A9B41FBB1D292D28005A920E /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B41FAA1D292D28005A920E /* Vector2.h */; };
 		A9B41FBC1D292D28005A920E /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9B41FAB1D292D28005A920E /* Vector3.cpp */; };
 		A9B41FBD1D292D28005A920E /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B41FAC1D292D28005A920E /* Vector3.h */; };
+		A9B41FC11D29450F005A920E /* Universe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9B41FBF1D29450F005A920E /* Universe.cpp */; };
+		A9B41FC21D29450F005A920E /* Universe.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A9B41FC01D29450F005A920E /* Universe.hpp */; };
 		B5C75FB1AE37A6AD61A3B27370ED6C6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C181D1D245D5C40D9341349488B58055 /* Pods-FrameworkX_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD0ED9139DE6EB2576D8390D0D4683B /* Pods-FrameworkX_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4C3C2CAB345C834B4B4EBC894EB11DF /* Pods-FrameworkX_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1368BB32DA4CC62D5B6BFAED17E66868 /* Pods-FrameworkX_Example-dummy.m */; };
@@ -83,6 +85,8 @@
 		A9B41FAA1D292D28005A920E /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
 		A9B41FAB1D292D28005A920E /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
 		A9B41FAC1D292D28005A920E /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		A9B41FBF1D29450F005A920E /* Universe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Universe.cpp; sourceTree = "<group>"; };
+		A9B41FC01D29450F005A920E /* Universe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Universe.hpp; sourceTree = "<group>"; };
 		AAD53DE8568B05ED5E0BF2DBDE1CFF39 /* Pods-FrameworkX_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FrameworkX_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B2AE62B38E500E2AA15A81ECD13E0770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA98DE055F9ADEB02A3B3C8D8DE05020 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		A9B41F961D292D28005A920E /* core */ = {
 			isa = PBXGroup;
 			children = (
+				A9B41FBE1D2944FC005A920E /* universe */,
 				A9B41F971D292D28005A920E /* camera */,
 				A9B41F9A1D292D28005A920E /* config */,
 				A9B41F9C1D292D28005A920E /* entity */,
@@ -241,6 +246,22 @@
 				A9B41FAC1D292D28005A920E /* Vector3.h */,
 			);
 			path = math;
+			sourceTree = "<group>";
+		};
+		A9B41FBE1D2944FC005A920E /* universe */ = {
+			isa = PBXGroup;
+			children = (
+				A9B41FBF1D29450F005A920E /* Universe.cpp */,
+				A9B41FC01D29450F005A920E /* Universe.hpp */,
+			);
+			path = universe;
+			sourceTree = "<group>";
+		};
+		A9B41FC31D2947FA005A920E /* render */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = render;
 			sourceTree = "<group>";
 		};
 		AABB3082BF8247F347C78B6FBEADFB6A /* Products */ = {
@@ -305,6 +326,7 @@
 		F031EEE6348CAA66A84F4BF6DEB465AB /* FrameworkX */ = {
 			isa = PBXGroup;
 			children = (
+				A9B41FC31D2947FA005A920E /* render */,
 				A9B41F961D292D28005A920E /* core */,
 			);
 			path = FrameworkX;
@@ -325,6 +347,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B41FC21D29450F005A920E /* Universe.hpp in Headers */,
 				A477BFBDC9C2CCE6D09B6CBDB168C91E /* FrameworkX-umbrella.h in Headers */,
 				A9B41FB31D292D28005A920E /* Layer.h in Headers */,
 				A9B41FBB1D292D28005A920E /* Vector2.h in Headers */,
@@ -452,6 +475,7 @@
 			files = (
 				A9B41FB41D292D28005A920E /* ArithmeticException.cpp in Sources */,
 				A9B41FBA1D292D28005A920E /* Vector2.cpp in Sources */,
+				A9B41FC11D29450F005A920E /* Universe.cpp in Sources */,
 				A9B41FAD1D292D28005A920E /* Camera.cpp in Sources */,
 				A9B41FB01D292D28005A920E /* Entity.cpp in Sources */,
 				A9B41FBC1D292D28005A920E /* Vector3.cpp in Sources */,
