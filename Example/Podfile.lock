@@ -1,0 +1,16 @@
+PODS:
+  - FrameworkX (0.1.0)
+
+DEPENDENCIES:
+  - FrameworkX (from `../`)
+
+EXTERNAL SOURCES:
+  FrameworkX:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FrameworkX: ff0eea1705ec243234facb1e40f1f4f4edeaccd6
+
+PODFILE CHECKSUM: 555dcf4ef678d294d23984a96f8d99b5a5b49d57
+
+COCOAPODS: 1.0.1

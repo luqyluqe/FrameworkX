@@ -1,0 +1,6 @@
+framework module FrameworkX {
+  umbrella header "FrameworkX-umbrella.h"
+
+  export *
+  module * { export * }
+}
